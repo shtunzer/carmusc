@@ -1,3 +1,5 @@
+/* RESET STYLES */
+
 html{
     box-sizing: border-box;
 }
@@ -44,16 +46,41 @@ ul{
     margin: 0 auto;
 }
 
+/* DEFAULT ITEMS */
+
+.between-box{
+    width: 147px;
+    height: 14px;
+    justify-content: space-between;
+    display: flex;
+    margin: 6px auto 40px;
+}
+
+.between-box>span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #DB3138;
+    transform: rotate(-45deg);
+}
+
+/* HEADER */
+
 .header{
-    position: relative;
-    z-index: 5;
+    height: 100vh;
+    background: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header__inner{
+    padding-top: 40px;
+}
+
+.header__nav>.container{
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
-    align-items: center;
 }
 
 .header__list-item + .header__list-item{
@@ -94,78 +121,50 @@ ul{
     margin-left: 0;
 }
 
-.firstScreen{
-    width: 100%;
-    height: 125vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.firstScreen__title{
-    color: #DB3138;
+.header__title{
+    margin-top: 18vh;
     font-family: 'Reforma Grotesk Bold';
-    font-weight: 700;
+    color: #DB3138;
     font-size: 150px;
+    font-weight: 700;
     line-height: 125%;
     text-align: center;
-    margin-top: 15vh;
-}
+} 
 
-.between-box{
-    width: 147px;
-    height: 14px;
-    justify-content: space-between;
-    display: flex;
-    margin: 6px auto 40px;
-}
-
-.between-box>span{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #DB3138;
-    transform: rotate(-45deg);
-}
-
-.firstScreen__text{
+.header__text{
+    margin: 0 auto;
+    max-width: 437px;
     font-family: 'Reforma Grotesk Medium';
-    font-weight: 500;
+    color: #FFFFFF;
     font-size: 40px;
+    font-weight: 500;
     line-height: 120%;
     text-align: center;
-    color: #FFFFFF;
-    max-width: 437px;
-    margin: 0 auto;
 }
 
-.firstScreen__link{
+.header__link{
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 25px;
+    max-width: 170px;
     font-family: 'Reforma Grotesk Demi';
-    font-weight: 600;
+    color: #FFFFFF;
     font-size: 24px;
+    font-weight: 600;
     line-height: 140%;
-    text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #FFFFFF;
-    margin: 40px auto 0;
-    display: block;
-    max-width: 170px;
-    padding: 15px 25px;
+    text-align: center;
     background: linear-gradient(to right, #DB3138 65%, transparent 50%);
 }
 
-.firstScreen__contacts{
-    padding-top: 111px;
+.header__contacts{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 84px;
 }
 
-.firstScreen__contact{
+.header__contact{
     border: 1px solid #898989;
     font-family: 'Reforma Grotesk Demi';
     font-weight: 600;
@@ -174,32 +173,29 @@ ul{
     letter-spacing: 0.05em;
     text-transform: uppercase;
     padding: 5vh 0;
+    bottom: 0;
 }
 
-.firstScreen__contact--custom{
+.header__contact--custom{
     border-right: none;
     border-left: none;
 }
 
-.firstScreen__contact-title{
+.header__contact-title{
     font-size: 18px;
     color: #FFFFFF;
     margin-bottom: 5px;
 }
 
-.firstScreen__contact-text{
+.header__contact-text{
     font-size: 24px;
     max-width: 265px;
     color: #DB3138;
     margin: 0 auto;
     margin-top: 15px;
-}
+}  
 
-.footer{
-    /* position: relative;
-    bottom: -255px;
-    left: 0; */
-}   
+/* FOOTER */
 
 .footer__form-box{
     padding: 120px 0 100px;
@@ -266,6 +262,7 @@ ul{
     display: inline-block;
 }
 
+/* FOOTER FORM */
 
 .form__input,
 .form__textarea{
@@ -356,6 +353,8 @@ ul{
     align-items: center;
 }
 
+/* WORKS */
+
 .works__inner{
     padding-top: 180px;
 }
@@ -382,6 +381,156 @@ ul{
 
 .works__img{
     display: block;
-    width: 224px;
-    height: 184px;
+    width: 317.2px;
+    height: 277.2px;
+}
+
+/* ACHIVMENT */
+
+.achivment{
+    padding-top: 180px;
+}
+
+.achivment>.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.achivment__textBox>.between-box{
+    margin: 40px 0 60px;
+}
+
+.achivment__textBox{
+    max-width: 636px;
+}
+
+.achivment__title{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.achivment__text{
+    max-width: 526px;
+    font-family: 'Reforma Grotesk Medium';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.achivment__scores{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.achivment__scores--2{
+    margin-top: 40px;
+}
+
+.achivment__score{
+    border: 1px solid #898989;
+    padding: 25px 20px 35px;
+    width: 318px;
+    height: 177px;
+}
+
+.achivment__score-title{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DB3138;
+}
+
+.achivment__score-title>span{
+    font-size: 24px;
+}
+
+.achivment__score-img{
+    margin: 0 auto;
+    margin-bottom: 22px;
+    display: block;
+}
+
+.achivment__score-text{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* WORKSLIDER */
+
+.workSlider{
+    padding-top: 150px;
+}
+
+.workSlider>.container{
+    max-width: 1558px;
+}
+
+.swiper-wrapper{
+    position: relative;
+    left: 7%;
+    top: 30px;
+}
+
+.slide + .slide{
+    margin-left: 24px;
+}
+
+.slide{
+    max-width: 416px;
+    display: inline-block;
+}
+
+.slide__img{
+    width: 416px;
+    height: 350px;
+}
+
+.slide__text{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 30px 40px;
+    max-width: 286px;
+    margin: 0 auto;
+    margin-top: -35px;
+    position: relative;
+    background: linear-gradient(to bottom, #DB3138 50%, transparent 50%);
+}
+
+:root {
+    --swiper-theme-color: transparent;
+}
+
+.swiper-button-next{
+    background: url(../images/next-btn.svg);
+    width: 71px;
+    height: 71px;
+}
+
+.swiper-button-prev{
+    background: url(../images/pref-btn.svg);
+    width: 71px;
+    height: 71px;
 }
