@@ -5,68 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Musc</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <nav class="header__nav">
+            <div class="header__inner">
+                <nav class="header__nav">
+                    <div class="container">
                         <ul class="header__list">
                             <li class="header__list-item"><a href="/" class="header__list-link">Главная</a></li>
                             <li class="header__list-item"><a href="#" class="header__list-link">Оклейка автомобилей</a></li>
                             <li class="header__list-item"><a href="#" class="header__list-link">Детейлинг автомобилей</a></li>
                             <li class="header__list-item"><a href="#" class="header__list-link">Галерея работ</a></li>
                         </ul>
-                    </nav>
-                    <button class="burgerMenu__btn">
-                        <span class="burgerMenu__span burgerMenu__span--1"></span>
-                        <span class="burgerMenu__span burgerMenu__span--2"></span>
-                        <span class="burgerMenu__span"></span>
-                    </button>
+                        <button class="burgerMenu__btn">
+                            <span class="burgerMenu__span burgerMenu__span--1"></span>
+                            <span class="burgerMenu__span burgerMenu__span--2"></span>
+                            <span class="burgerMenu__span"></span>
+                        </button>
+                    </div>
+                </nav>
+                <h1 class="header__title">CAR MUSC</h1>
+                <div class="between-box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.</p>
+                <a href="#" class="header__link">Наши услуги</a>
+                <div class="header__contacts">
+                    <div class="header__contact header__contact--custom">
+                        <h4 class="header__contact-title">адрес:</h4>
+                        <p class="header__contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                    </div>
+                    <div class="header__contact">
+                        <h4 class="header__contact-title">телефон:</h4>
+                        <p class="header__contact-text">8 (812) 123-45-67</p>
+                        <p class="header__contact-text">8-911-123-45-67</p>
+                    </div>
+                    <div class="header__contact header__contact--custom">
+                        <h4 class="header__contact-title">Режим работы:</h4>
+                        <p class="header__contact-text">пн-пт : 10:00 - 20:00</p>
+                        <p class="header__contact-text">сб-вск : 12:00 - 20:00</p>
+                    </div>
                 </div>
             </div>
         </header>
-        <main class="main">         
-            <!-- <section class="firstScreen">
+        <main class="main">  
+            <section class="achivment">
                 <div class="container">
-                    <div class="firstScreen__content">
-                        <h1 class="firstScreen__title">
-                            CAR MUSC
-                        </h1>
+                    <div class="achivment__textBox">
+                        <h2 class="achivment__title">наши достижения от кубка россии до чемпионатов мира</h2>
                         <div class="between-box">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        <p class="firstScreen__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.
-                        </p>
-                        <a href="#" class="firstScreen__link">
-                            Наши услуги
-                        </a>
+                        <p class="achivment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales. Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at. Sed viverra nulla nam arcu, non iaculis pretium, volutpat. </p>
+                    </div>
+                    <div class="achivment__scores">
+                        <div class="achivment__scores--1">
+                            <div style="margin-top: 0" class="achivment__score">
+                                <h1 class="achivment__score-title"><span>#</span>1</h1>
+                                <p class="achivment__score-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                            </div>
+                            <div class="achivment__score">
+                                <h1 class="achivment__score-title"><span>#</span>3</h1>
+                                <p class="achivment__score-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                            </div>
+                            <div class="achivment__score">
+                                <h1 class="achivment__score-title"><span>#</span>5</h1>
+                                <p class="achivment__score-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                            </div>
+                            <div class="achivment__score">
+                                <h1 class="achivment__score-title"><span>#</span>7</h1>
+                                <p class="achivment__score-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                            </div>
+                        </div>
+                        <div class="achivment__scores--2">
+                            <div class="achivment__score">
+                                <h1 class="achivment__score-title"><span>#</span>2</h1>
+                                <p class="achivment__score-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                            </div>
+                            <div class="achivment__score">
+                                <h1 class="achivment__score-title"><span>#</span>4</h1>
+                                <p class="achivment__score-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                            </div>
+                            <div class="achivment__score">
+                                <h1 class="achivment__score-title"><span>#</span>6</h1>
+                                <p class="achivment__score-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                            </div>
+                            
+                            <div class="achivment__score">
+                                <img class="achivment__score-img" src="assets/images/trofey.svg">
+                                <p class="achivment__score-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="firstScreen__contacts">
-                    <div class="firstScreen__contact firstScreen__contact--custom">
-                        <h4 class="firstScreen__contact-title">адрес:</h4>
-                        <p class="firstScreen__contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+            </section>
+            <section class="workSlider">
+                <div class="container">
+                    
+    
+                    <div class="slider">
+                        <div class="swiper">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__content">
+                                        <div class="slide">
+                                            <img src="assets/images/card-1.jpg" class="slide__img">
+                                            <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                                        </div>
+                                        <div class="slide">
+                                            <img src="assets/images/card-2.jpg" class="slide__img">
+                                            <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                                        </div>
+                                        <div class="slide">
+                                            <img src="assets/images/card-3.jpg" class="slide__img">
+                                            <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__content">
+                                        <div class="slide">
+                                            <img src="assets/images/card-3.jpg" class="slide__img">
+                                            <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                                        </div>
+                                        <div class="slide">
+                                            <img src="assets/images/card-2.jpg" class="slide__img">
+                                            <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                                        </div>
+                                        <div class="slide">
+                                            <img src="assets/images/card-1.jpg" class="slide__img">
+                                            <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
-                    <div class="firstScreen__contact">
-                        <h4 class="firstScreen__contact-title">телефон:</h4>
-                        <p class="firstScreen__contact-text">8 (812) 123-45-67</p>
-                        <p class="firstScreen__contact-text">8-911-123-45-67</p>
-                    </div>
-                    <div class="firstScreen__contact firstScreen__contact--custom">
-                        <h4 class="firstScreen__contact-title">Режим работы:</h4>
-                        <p class="firstScreen__contact-text">пн-пт : 10:00 - 20:00</p>
-                        <p class="firstScreen__contact-text">сб-вск : 12:00 - 20:00</p>
-                    </div>
+        
+                    
                 </div>
-            </section> -->
+            </section>
             <section class="works">
                 <div class="works__inner">
                     <h2 class="works__title">Наши работы</h2>
@@ -155,5 +245,6 @@
         </footer>
     </div>
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </html>
