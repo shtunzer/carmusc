@@ -1,0 +1,387 @@
+html{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    background-color: #141414;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1326px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header{
+    position: relative;
+    z-index: 5;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.header__list-item + .header__list-item{
+    margin-left: 40px;
+}
+
+.header__list-item{
+    display: inline-block;
+    font-family: 'Reforma Grotesk Medium';
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.burgerMenu__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.burgerMenu__span{
+    width: 40px;
+    height: 3px;
+    background: #DB3138;
+    display: block;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.burgerMenu__span--1{
+    margin-top: 0;
+}
+
+.burgerMenu__span--2{
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.firstScreen{
+    width: 100%;
+    height: 125vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.firstScreen__title{
+    color: #DB3138;
+    font-family: 'Reforma Grotesk Bold';
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 125%;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.between-box{
+    width: 147px;
+    height: 14px;
+    justify-content: space-between;
+    display: flex;
+    margin: 6px auto 40px;
+}
+
+.between-box>span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #DB3138;
+    transform: rotate(-45deg);
+}
+
+.firstScreen__text{
+    font-family: 'Reforma Grotesk Medium';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 437px;
+    margin: 0 auto;
+}
+
+.firstScreen__link{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 40px auto 0;
+    display: block;
+    max-width: 170px;
+    padding: 15px 25px;
+    background: linear-gradient(to right, #DB3138 65%, transparent 50%);
+}
+
+.firstScreen__contacts{
+    padding-top: 111px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.firstScreen__contact{
+    border: 1px solid #898989;
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 5vh 0;
+}
+
+.firstScreen__contact--custom{
+    border-right: none;
+    border-left: none;
+}
+
+.firstScreen__contact-title{
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.firstScreen__contact-text{
+    font-size: 24px;
+    max-width: 265px;
+    color: #DB3138;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.footer{
+    /* position: relative;
+    bottom: -255px;
+    left: 0; */
+}   
+
+.footer__form-box{
+    padding: 120px 0 100px;
+}
+
+.footer__form{
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.form__inputs,
+.form__textarea-box,
+.form__contacts-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__title{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 52px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.footer__bottom{
+    border-top: 1px solid #898989;
+    padding: 30px 0;
+}
+
+.footer__bottom>.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.footer__list-item +  .footer__list-item{
+    margin-left: 40px;
+}
+
+.footer__list-item{
+    font-family: 'Reforma Grotesk Medium';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+
+.form__input,
+.form__textarea{
+    font-family: 'Reforma Grotesk Demi';
+    padding: 15px 25px;
+    background: #141414;
+    border: 1px solid #898989;
+    width: 306px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.07em;
+}
+
+.form__textarea{
+    width: 526px;
+    height: 150px;
+    margin-top: 25px;
+    resize: none;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder{
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #898989;
+}
+
+.form__links{
+    max-width: 40px;
+    margin-top: 25px;
+}
+
+.form__link{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form__link-img{
+    display: block;
+}
+
+.form__submit{
+    font-family: 'Reforma Grotesk Demi';
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: linear-gradient(to right, #DB3138 50%, transparent 50%);
+    border: none;
+    margin-top: 10px;
+}
+
+.form__contacts{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: end;
+}
+
+.form__contact-text + .form__contact-text{
+    margin-left: 30px;
+}
+
+.form__contact-img{
+    margin-right: 10px;
+}
+
+.form__smallContact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__contact-text{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.works__inner{
+    padding-top: 180px;
+}
+
+.works__title{
+    font-family: 'Reforma Grotesk Demi';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 36px;
+}
+
+.works__content{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+}
+
+.works__img{
+    display: block;
+    width: 224px;
+    height: 184px;
+}

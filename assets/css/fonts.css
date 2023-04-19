@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Reforma Grotesk Light';
+    src: url('../fonts/ReformaGroteskLightC.eot');
+    src: url('../fonts/ReformaGroteskLightC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ReformaGroteskLightC.woff') format('woff'),
+    url('../fonts/ReformaGroteskLightC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reforma Grotesk Medium';
+    src: url('../fonts/ReformaGroteskMediumC.eot');
+    src: url('../fonts/ReformaGroteskMediumC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ReformaGroteskMediumC.woff') format('woff'),
+    url('../fonts/ReformaGroteskMediumC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reforma Grotesk Demi';
+    src: url('../fonts/ReformaGroteskDemiC.eot');
+    src: url('../fonts/ReformaGroteskDemiC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ReformaGroteskDemiC.woff') format('woff'),
+    url('../fonts/ReformaGroteskDemiC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reforma Grotesk Bold';
+    src: url('../fonts/ReformaGroteskBoldC.eot');
+    src: url('../fonts/ReformaGroteskBoldC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ReformaGroteskBoldC.woff') format('woff'),
+    url('../fonts/ReformaGroteskBoldC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
