@@ -4,6 +4,12 @@ html{
     box-sizing: border-box;
 }
 
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 html,
 body{
     height: 100%;
@@ -87,7 +93,8 @@ ul{
     margin-left: 40px;
 }
 
-.header__list-item{
+.header__list-item,
+.header__list-btn{
     display: inline-block;
     font-family: 'Reforma Grotesk Medium';
     color: #FFFFFF;
@@ -159,9 +166,11 @@ ul{
 }
 
 .header__contacts{
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 84px;
+    max-width: 1920px;
 }
 
 .header__contact{
@@ -193,7 +202,23 @@ ul{
     color: #DB3138;
     margin: 0 auto;
     margin-top: 15px;
-}  
+} 
+
+.header__title-service{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DB3138;
+    margin-bottom: 27px;
+}
+
+.header__link-service{
+    background: linear-gradient(to right, #DB3138 57%, transparent 50%);
+    max-width: 84px;
+    margin-top: 107px;
+}
 
 /* FOOTER */
 
@@ -251,7 +276,8 @@ ul{
     margin-left: 40px;
 }
 
-.footer__list-item{
+.footer__list-item,
+.footer__list-btn{
     font-family: 'Reforma Grotesk Medium';
     font-weight: 500;
     font-size: 24px;
@@ -474,29 +500,6 @@ ul{
 
 /* WORKSLIDER */
 
-.workSlider{
-    padding-top: 150px;
-}
-
-.workSlider>.container{
-    max-width: 1558px;
-}
-
-.swiper-wrapper{
-    position: relative;
-    left: 7%;
-    top: 30px;
-}
-
-.slide + .slide{
-    margin-left: 24px;
-}
-
-.slide{
-    max-width: 416px;
-    display: inline-block;
-}
-
 .slide__img{
     width: 416px;
     height: 350px;
@@ -519,6 +522,10 @@ ul{
     background: linear-gradient(to bottom, #DB3138 50%, transparent 50%);
 }
 
+.workSlider{
+    padding-top: 150px;
+}
+
 :root {
     --swiper-theme-color: transparent;
 }
@@ -533,4 +540,311 @@ ul{
     background: url(../images/pref-btn.svg);
     width: 71px;
     height: 71px;
+}
+
+.slide + .slide{
+    margin-left: 24px;
+}
+
+.slide{
+    max-width: 416px;
+    display: inline-block;
+}
+
+.mySwiper>.swiper-wrapper{
+    position: relative;
+    left: 7.2%;
+    top: 35px;
+}
+
+.workSlider>.container{
+    max-width: 1558px;
+}
+
+/* ADVANTAGES */
+
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages{
+    padding-top: 180px;
+}
+
+.advantages__textBlock{
+    max-width: 526px;
+
+}
+
+.advantages__textBlock-img{
+    display: inline-block;
+}
+
+.advantages__textBlock-title{
+    display: inline-block;
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 30px;
+    align-items: center;
+    position: relative;
+    top: -17px;
+}
+
+.advantages__textBlock-text{
+    font-family: 'Reforma Grotesk Medium';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.advantages__textBlock>.between-box{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.advantages__swiperBlock{
+    height: 674px;
+    width: 636px;
+}
+
+.advantages__swiperBlock-text{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 422px;
+    display: inline-block;
+    margin: 0 32px;
+    position: relative;
+    top: -15px;
+}
+
+.advantages__swiperBlock-prev,
+.advantages__swiperBlock-next{
+    display: inline-block;
+    width: 71px;
+    height: 71px;
+    margin-top: 40px;
+}
+
+.advantages__swiperBlock-prev{
+    background: url(../images/pref-btn.svg);
+}
+
+.advantages__swiperBlock-next{
+    background: url(../images/next-btn.svg);
+}
+
+/* SERVICES */
+
+.services{
+    padding-top: 180px;
+}
+
+.services__title{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.services__btnBlock{
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+.services__btn{
+    font-family: 'Reforma Grotesk Demi';
+    padding: 15px 40px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;  
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    border:  none;
+}
+
+.services__cardBlock{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.services__card-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.services__card + .services__card{
+    margin-left: 24px;
+}
+
+.services__card{
+    border: 1px solid #898989;
+    padding: 80px 40px 50px;
+}
+
+.services__card-title{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.services__card-text{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.services__card-link{
+    padding: 10px 20px;
+    background: linear-gradient(to right, #DB3138 50%, transparent 50%);
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    max-width: 113px;
+}
+
+
+/* PRICE */
+
+.price{
+    padding-top: 180px;
+}
+
+.price__title{
+    font-family: 'Reforma Grotesk Demi';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.price-box{
+    border-top: 1px solid #898989;
+    border-bottom: 1px solid #898989;
+}
+
+.price-box__title + .price-box__title{
+    margin-left: 24px;
+}
+
+.price-box__title{
+    font-family: 'Reforma Grotesk Demi';    
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 236px;
+    padding: 30px 0;
+}
+
+.price>.container>.between-box{
+    margin-bottom: 60px;
+}
+
+.price-box__price{
+    border-top: 1px solid #898989;
+    padding: 25px 0;
+    height: 117px;
+}
+
+.price-box__price-text + .price-box__price-text{
+    margin-left: 24px;
+}
+
+.price-box__price-text{
+    font-family: 'Reforma Grotesk Demi';
+    display: inline-block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.6;
+    width: 236px;
+    position: relative;
+    top: -18px;
+}
+
+.price-box__price-text-custom{
+    color: #DB3138;
+    opacity: 1;
+    position: unset;
+}
+
+/* ADVENGES SECOND */
+
+.advantages__sponsors{
+    width: 420px;
+    height: 166px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.advantages__sponsors-img + .advantages__sponsors-img,
+.advantages__sponsors-img--2 + .advantages__sponsors-img--2{
+    margin-left: 100px;
+}
+
+.advantages__sponsors-img,
+.advantages__sponsors-img--2{
+    display: block;
+    position: relative;
 }
