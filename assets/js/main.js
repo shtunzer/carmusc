@@ -25,7 +25,9 @@ var button6 = document.querySelector('.scrollTo6');
 var button7 = document.querySelector('.scrollTo7');
 var button8 = document.querySelector('.scrollTo8');
 var button9 = document.querySelector('.scrollTo9');
-
+var button10 = document.querySelector('.scrollTo10');
+var button11 = document.querySelector('.scrollTo11');
+var button12 = document.querySelector('.scrollTo12');
 
 var advantages1 = document.querySelector('#advantages1');
 var advantages2 = document.querySelector('#advantages2');
@@ -55,6 +57,31 @@ button8.addEventListener('click' , () => {
 });
 button9.addEventListener('click' , () => {
   scrollTo(works);
+});
+button10.addEventListener('click' , () => {
+  scrollTo(advantages1);
+});
+button11.addEventListener('click' , () => {
+  scrollTo(advantages2);
+});
+button12.addEventListener('click' , () => {
+  scrollTo(works);
+});
+
+document.getElementById('burgerMenu__btn-open').addEventListener('click', function(){
+  document.getElementById('burgerMenu').classList.add('--show');
+});
+document.getElementById('burgerMenu__btn-hide').addEventListener('click', function(){
+  document.getElementById('burgerMenu').classList.remove('--show');
+});
+document.querySelector('.scrollTo10').addEventListener('click', function(){
+  document.getElementById('burgerMenu').classList.remove('--show');
+});
+document.querySelector('.scrollTo11').addEventListener('click', function(){
+  document.getElementById('burgerMenu').classList.remove('--show');
+});
+document.querySelector('.scrollTo12').addEventListener('click', function(){
+  document.getElementById('burgerMenu').classList.remove('--show');
 });
 
 
