@@ -1,3 +1,10 @@
+const swiper = new Swiper(".mySwiper", {
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+});
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -19,7 +26,6 @@ window.onscroll = function() {
 var button1 = document.querySelector('.scrollTo1');
 var button2 = document.querySelector('.scrollTo2');
 var button3 = document.querySelector('.scrollTo3');
-var button4 = document.querySelector('.scrollTo4');
 var button5 = document.querySelector('.scrollTo5');
 var button6 = document.querySelector('.scrollTo6');
 var button7 = document.querySelector('.scrollTo7');
@@ -32,7 +38,6 @@ var button12 = document.querySelector('.scrollTo12');
 var advantages1 = document.querySelector('#advantages1');
 var advantages2 = document.querySelector('#advantages2');
 var works = document.querySelector('#works');
-var price = document.querySelector('#price');
 
 button1.addEventListener('click' , () => {
   scrollTo(advantages1);
@@ -82,12 +87,4 @@ document.querySelector('.scrollTo11').addEventListener('click', function(){
 });
 document.querySelector('.scrollTo12').addEventListener('click', function(){
   document.getElementById('burgerMenu').classList.remove('--show');
-});
-
-
-const swiper = new Swiper(".mySwiper", {
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-  },
 });
