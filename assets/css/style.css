@@ -958,6 +958,60 @@ ul{
 
 /* MEDIA */
 
+@media (max-width: 1904px){
+    .works__content{
+        grid-template-columns: repeat(5, 1fr);
+        margin: 0 auto;
+        
+    }
+}
+
+@media (max-width: 1604px){
+    .works__content{
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1267px;
+    }
+}
+
+@media (max-width: 1285px){
+    .works__content{
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 952px;
+    }
+}
+
+@media (max-width: 1588px){
+    .slide__img{
+        width: calc(416px - 50px);
+        height: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    .slide__text{
+        width: 316px;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 1340px){ 
+    .price-box__price-text{
+        max-width: 160px;
+    }
+    .price-box__price-text-custom{
+        max-width: 210px;
+    }
+    .price-box__title{
+        max-width: 160px;
+    }
+    .price-box__title-custom{
+        max-width: 210px;
+    }
+    .price-box__titles{
+        display: flex;
+        align-items: center;
+    }
+}
+
 @media (max-width: 1300px){
     .achivment__textBox{
         margin: 0 auto;
@@ -994,6 +1048,9 @@ ul{
         margin: 0 auto;
         margin-top: 40px;
     }
+    .advantages-service{
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 1190px){
@@ -1011,6 +1068,35 @@ ul{
     }
 }
 
+@media (max-width: 1010px){
+    .price-box__price-text{
+        max-width: 120px;
+        font-size: 18px;
+        top: 0;
+    }
+    .price-box__price-text-custom{
+        max-width: 170px;
+    }
+    .price-box__title{
+        max-width: 120px;
+        font-size: 18px;
+    }
+    .price-box__title-custom{
+        max-width: 170px;
+    }
+    .price-box__titles{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 969px){
+    .works__content{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 634px;
+    }
+}
+
 @media (max-width: 900px){
     .header__contacts{
         grid-template-columns: repeat(1, 1fr);
@@ -1024,6 +1110,28 @@ ul{
     }
     .achivment{
         padding-top: 400px;
+    }
+}
+
+@media (max-width: 810px){
+    .price-box__price-text{
+        max-width: 80px;
+        font-size: 14px;
+        top: 0;
+    }
+    .price-box__price-text-custom{
+        max-width: 130px;
+    }
+    .price-box__title{
+        max-width: 80px;
+        font-size: 14px;
+    }
+    .price-box__title-custom{
+        max-width: 130px;
+    }
+    .price-box__titles{
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -1133,6 +1241,41 @@ ul{
         display: block;
         margin-bottom: 20px;
     }
+    .works__content{
+        max-width: 534px;
+    }
+    .works__img{
+        width: 267px;
+        height: 227px;
+    }
+}
+
+@media (max-width: 610px){
+    .price-box__price-text{
+        max-width: 40px;
+        font-size: 10px;
+        top: 0;
+    }
+    .price-box__price-text-custom{
+        max-width: 90px;
+    }
+    .price-box__title{
+        max-width: 40px;
+        font-size: 10px;
+    }
+    .price-box__title-custom{
+        max-width: 90px;
+    }
+    .price-box__titles{
+        display: flex;
+        align-items: center;
+    }
+    .price__title{
+        font-size: 24px;
+    }
+    .price-box__price{
+        height: 80px;
+    }
 }
 
 @media (max-width: 600px){
@@ -1153,6 +1296,9 @@ ul{
     }
     .advantages__textBlock-text{
         font-size: 20px;
+    }
+    .advantages__sponsors{
+        margin: 30px 0 0;
     }
 }
 
@@ -1182,6 +1328,12 @@ ul{
     }
     .header__title{
         font-size: 120px;
+    }
+    .header__title-service{
+        font-size: 48px;
+    }
+    .services__title-service{
+        font-size: 40px;
     }
 }
 
@@ -1215,6 +1367,13 @@ ul{
     .services{
         padding-top: 0;
     }
+    .works__content{
+        max-width: 434px;
+    }
+    .works__img{
+        width: 217px;
+        height: 177px;
+    }
 }
 
 @media (max-width: 500px){
@@ -1230,6 +1389,16 @@ ul{
     .services__btn + .services__btn{
         margin-top: 20px;
         padding: 15px 20px;
+    }
+    .slider,
+    .slider>.swiper{
+        max-height: 450px;
+    }
+    .advantages__swiper-button-prev_1,
+    .advantages__swiper-button-prev_2,
+    .advantages__swiper-button-next_1,
+    .advantages__swiper-button-next_2{
+        margin-top: -110px;
     }
 }
 
@@ -1248,6 +1417,13 @@ ul{
     }
     .header__title{
         font-size: 100px;
+    }
+    .header__title-service{
+        font-size: 38px;
+    }
+    .advantages__sponsors-img + .advantages__sponsors-img,
+    .advantages__sponsors-img--2 + .advantages__sponsors-img--2{
+        margin-left: 20px;
     }
 }
 
@@ -1281,7 +1457,36 @@ ul{
     .advantages__swiper-button-prev_2,
     .advantages__swiper-button-next_1,
     .advantages__swiper-button-next_2{
-        margin-top: -395px;
+        margin-top: -170px;
+    }
+    .works__content{
+        max-width: 334px;
+    }   
+    .works__img{
+        width: 167px;
+        height: 127px;
+    }
+}
+
+@media (max-width: 440px){
+    .advantages__textBlock-title-service{
+        font-size: 20px;
+    }
+    .advantages__sponsors-img + .advantages__sponsors-img,
+    .advantages__sponsors-img--2 + .advantages__sponsors-img--2{
+        margin-left: 0;
+    }
+    .advantages__sponsors{
+        max-width: 290px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .advantages__sponsors-img,
+    .advantages__sponsors-img--2{
+        max-width: 130px;
+    }
+    .services__title-service{
+        font-size: 32px;
     }
 }
 
@@ -1303,6 +1508,25 @@ ul{
     }
     .achivment__score-text{
         font-size: 12px;
+    }
+    .price-box__price-text{
+        max-width: 30px;
+        font-size: 10px;
+        top: 0;
+    }
+    .price-box__price-text-custom{
+        max-width: 70px;
+    }
+    .price-box__title{
+        max-width: 30px;
+        font-size: 10px;
+    }
+    .price-box__title-custom{
+        max-width: 70px;
+    }
+    .price-box__titles{
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -1326,7 +1550,7 @@ ul{
     .advantages__swiper-button-prev_2,
     .advantages__swiper-button-next_1,
     .advantages__swiper-button-next_2{
-        margin-top: -410px;
+        margin-top: -190px;
         width: 40px;
         height: 40px;
         background-position: center;
@@ -1350,5 +1574,12 @@ ul{
     }
     .achivment{
         padding-top: 0;
+    }
+    .header__text-service{
+        font-size: 24px;
+        max-width: 280px;
+    }
+    .services__title-service{
+        font-size: 28px;
     }
 }
