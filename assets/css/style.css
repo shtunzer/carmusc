@@ -958,6 +958,21 @@ ul{
 
 /* MEDIA */
 
+@media (max-width: 1300px){
+    .achivment__textBox{
+        margin: 0 auto;
+    }
+    .achivment>.container{
+        display: block;
+    }
+    .achivment__scores{
+        display: flex;
+        margin: 0 auto;
+        max-width: 636px;
+        margin-top: 40px;
+    }
+}
+
 @media (max-width: 900px){
     .header__contacts{
         grid-template-columns: repeat(1, 1fr);
@@ -969,6 +984,29 @@ ul{
     .header__contact{
         border-bottom: none;
     }
+    .achivment{
+        padding-top: 400px;
+    }
+}
+
+@media (max-width: 700px){
+    .achivment__title{
+        font-size: 40px;
+        max-width: 465px;
+    }
+    .achivment__textBox{
+        max-width: 526px;
+    }
+    .achivment__score{
+        padding: 20px 15px;    
+        max-width: 250px; 
+    }
+    .achivment__score-text{
+        font-size: 14px;
+    }
+    .achivment__scores{
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 680px){
@@ -977,6 +1015,32 @@ ul{
     }
     .burgerMenu__btn{
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 560px){
+    .achivment__text{
+        font-size: 20px;
+        max-width: 450px;
+    }
+    .achivment__title{
+        font-size: 35px;
+    }
+    .achivment__textBox>.between-box{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .achivment__textBox{
+        max-width: 450px;
+    }
+    .achivment__score{
+        max-width: 180px;
+    }
+    .achivment__score-text{
+        max-width: 150px;
+    }
+    .achivment__scores{
+        max-width: 360px;
     }
 }
 
@@ -996,8 +1060,32 @@ ul{
     }
 }
 
+@media (max-width: 410px){
+    .achivment__title{
+        font-size: 25px;
+    }
+    .achivment__text{
+        font-size: 16px;
+    }
+    .achivment__textBox{
+        max-width: 300px;
+    }
+    .achivment__scores{
+        max-width: 300px;
+    }
+    .achivment__score{
+        max-width: 150px;
+    }
+    .achivment__score-text{
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 370px){
     .header__contacts{
         display: none;
+    }
+    .achivment{
+        padding-top: 0;
     }
 }
