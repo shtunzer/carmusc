@@ -1191,6 +1191,12 @@ ul{
     .advantages__swiper-button-next_2{
         margin-top: -335px;
     }
+    #advantages2>.container>.advantages__inner>.slider{
+        max-height: 450px;
+    }
+    #advantages2>.container>.advantages__inner>.advantages__textBlock{
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 480px){
@@ -1292,6 +1298,12 @@ ul{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    #advantages2>.container>.advantages__inner>.slider{
+        max-height: 150px;
+    }
+    #advantages2>.container>.advantages__inner>.advantages__textBlock{
+        margin-top: 0;
     }
 }
 
