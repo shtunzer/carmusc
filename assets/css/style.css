@@ -973,6 +973,21 @@ ul{
     }
 }
 
+@media (max-width: 1190px){
+    .footer__bottom>.container{
+        display: block;
+    }
+    .footer__text{
+        max-width: 590px;
+        margin: 0 auto;
+    }
+    .footer__list{
+        max-width: 535px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
 @media (max-width: 900px){
     .header__contacts{
         grid-template-columns: repeat(1, 1fr);
@@ -1009,12 +1024,78 @@ ul{
     }
 }
 
+@media (max-width: 650px){
+    .form__input + .form__input{
+        margin-top: 20px;
+    }
+    .form__inputs{
+        display: block;
+        max-width: 306px;
+        margin: 0 auto;
+    }
+    .form__textarea-box{
+        display: block;
+    }
+    .form__textarea{
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+    .footer__text{
+        max-width: 380px;
+        text-align: center;
+    }
+    .footer__list-item + .footer__list-item{
+        margin: 0;
+    }
+    .footer__list-item + .footer__list-item + .footer__list-item{
+        margin-top: 10px;
+    }
+    .footer__list-item,
+    .footer__list-btn{
+        text-align: center;
+        margin: 0;
+    }
+    .footer__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form__links{
+        display: flex;
+        max-width: 150px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .form__link{
+        margin-bottom: 20px;
+    }
+    .form__contacts-box{
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .form__submit{
+        margin: 0 auto;
+        max-width: 144px;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 680px){
     .header__list{
         display: none;
     }
     .burgerMenu__btn{
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px){
+    .form__title{
+        font-size: 40px;
     }
 }
 
@@ -1042,9 +1123,6 @@ ul{
     .achivment__scores{
         max-width: 360px;
     }
-}
-
-@media (max-width: 560px){
     .header__title{
         font-size: 120px;
     }
@@ -1057,6 +1135,19 @@ ul{
     }
     .header__title{
         font-size: 100px;
+    }
+}
+
+@media (max-width: 450px){
+    .form__title{
+        margin-bottom: 24px;
+    }
+    .footer__form-box>.container>.between-box{
+        margin-bottom: 20px;
+    }
+    .form__textarea{
+        max-width: 306px;
+        max-height: 300px;
     }
 }
 
