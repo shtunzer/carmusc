@@ -1,27 +1,10 @@
-const swiper = new Swiper(".mySwiper", {
-  navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-  },
-});
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
-  } else {
-    document.getElementById("header").style.top = "-200px";
-  }
-  prevScrollpos = currentScrollPos;}
-
-  function scrollTo(element) {
-    window.scroll({
-        left: 0,
-        top: element.offsetTop,
-        behavior: 'smooth'
-    })
-}
+function scrollTo(element) {
+  window.scroll({
+      left: 0,
+      top: element.offsetTop,
+      behavior: 'smooth'
+  })
+}  
 
 var button1 = document.querySelector('.scrollTo1');
 var button2 = document.querySelector('.scrollTo2');
@@ -87,4 +70,47 @@ document.querySelector('.scrollTo11').addEventListener('click', function(){
 });
 document.querySelector('.scrollTo12').addEventListener('click', function(){
   document.getElementById('burgerMenu').classList.remove('--show');
+});
+
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+});
+
+const advantages__swiper_1 = new Swiper(".advantages__swiperBlock_1", {
+  navigation: {
+      nextEl: ".advantages__swiper-button-next_1",
+      prevEl: ".advantages__swiper-button-prev_1",
+  },
+});
+
+document.querySelector('.advantages__swiper-button-next_1').addEventListener('click', function(){
+  document.querySelector('.advantages__swiper-button-prev_1').classList.remove('--opacity-btn');
+  document.querySelector('.advantages__swiper-button-next_1').classList.add('--opacity-btn');
+});
+
+document.querySelector('.advantages__swiper-button-prev_1').addEventListener('click', function(){
+  document.querySelector('.advantages__swiper-button-next_1').classList.remove('--opacity-btn');
+  document.querySelector('.advantages__swiper-button-prev_1').classList.add('--opacity-btn');
+});
+
+const advantages__swiper_2 = new Swiper(".advantages__swiperBlock_1", {
+  navigation: {
+      nextEl: ".advantages__swiper-button-next_2",
+      prevEl: ".advantages__swiper-button-prev_2",
+  },
+});
+
+document.querySelector('.advantages__swiper-button-next_2').addEventListener('click', function(){
+  document.querySelector('.advantages__swiper-button-prev_2').classList.remove('--opacity-btn');
+  document.querySelector('.advantages__swiper-button-next_2').classList.add('--opacity-btn');
+});
+
+document.querySelector('.advantages__swiper-button-prev_2').addEventListener('click', function(){
+  document.querySelector('.advantages__swiper-button-next_2').classList.remove('--opacity-btn');
+  document.querySelector('.advantages__swiper-button-prev_2').classList.add('--opacity-btn');
 });
