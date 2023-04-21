@@ -971,6 +971,15 @@ ul{
         max-width: 636px;
         margin-top: 40px;
     }
+    .services__cardBlock{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services__card + .services__card{
+        margin-left: 0;
+    }
+    .services__card{
+        padding: 30px 20px;
+    }
 }
 
 @media (max-width: 1220px){
@@ -1057,6 +1066,15 @@ ul{
     }
 }
 
+@media (max-width: 680px){
+    .header__list{
+        display: none;
+    }
+    .burgerMenu__btn{
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 650px){
     .form__input + .form__input{
         margin-top: 20px;
@@ -1117,18 +1135,12 @@ ul{
     }
 }
 
-@media (max-width: 680px){
-    .header__list{
-        display: none;
-    }
-    .burgerMenu__btn{
-        margin: 0 auto;
-    }
-}
-
 @media (max-width: 600px){
     .form__title{
         font-size: 40px;
+    }
+    .services__cardBlock{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -1196,6 +1208,28 @@ ul{
     }
     #advantages2>.container>.advantages__inner>.advantages__textBlock{
         margin-top: 30px;
+    }
+    #advantages1>.container>.advantages__inner>.slider{
+        max-height: 450px;
+    }
+    .services{
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .services__btnBlock{
+        display: block;
+        max-width: 80%;
+    }
+    .services__btn{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+    .services__btn + .services__btn{
+        margin-top: 20px;
+        padding: 15px 20px;
     }
 }
 
@@ -1299,11 +1333,14 @@ ul{
         background-repeat: no-repeat;
         background-size: cover;
     }
-    #advantages2>.container>.advantages__inner>.slider{
-        max-height: 150px;
+    #advantages1>.container>.advantages__inner>.slider{
+        max-height: 350px;
     }
     #advantages2>.container>.advantages__inner>.advantages__textBlock{
         margin-top: 0;
+    }
+    #advantages2>.container>.advantages__inner>.slider{
+        max-height: 350px;
     }
 }
 
