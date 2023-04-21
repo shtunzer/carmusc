@@ -220,6 +220,8 @@ ul{
     margin-top: 107px;
 }
 
+    
+
 /* FOOTER */
 
 .footer__form-box{
@@ -383,6 +385,8 @@ ul{
 
 .works__inner{
     padding-top: 180px;
+    max-width: 1903px;
+    margin: 0 auto;
 }
 
 .works__title{
@@ -500,9 +504,34 @@ ul{
 
 /* WORKSLIDER */
 
+:root {
+    --swiper-theme-color: transparent;
+}
+
+.swiper-button-next{
+    background: url(../images/next-btn.svg);
+    width: 71px;
+    height: 71px;
+    position: unset;
+    float: right;
+    margin-right: -131px;
+    margin-top: -280px;
+}
+
+.swiper-button-prev{
+    background: url(../images/pref-btn.svg);
+    width: 71px;
+    height: 71px;
+    position: unset;
+    float: left;
+    margin-left: -131px;
+    margin-top: -280px;
+}
+
 .slide__img{
     width: 416px;
     height: 350px;
+    display: block;
 }
 
 .slide__text{
@@ -526,39 +555,12 @@ ul{
     padding-top: 150px;
 }
 
-:root {
-    --swiper-theme-color: transparent;
-}
-
-.swiper-button-next{
-    background: url(../images/next-btn.svg);
-    width: 71px;
-    height: 71px;
-}
-
-.swiper-button-prev{
-    background: url(../images/pref-btn.svg);
-    width: 71px;
-    height: 71px;
-}
-
-.slide + .slide{
-    margin-left: 24px;
-}
-
-.slide{
-    max-width: 416px;
-    display: inline-block;
-}
-
-.mySwiper>.swiper-wrapper{
-    position: relative;
-    left: 7.2%;
-    top: 35px;
+.slider{
+    padding: 0 131px;
 }
 
 .workSlider>.container{
-    max-width: 1558px;
+    max-width: 1588px;
 }
 
 /* ADVANTAGES */
@@ -638,14 +640,6 @@ ul{
     width: 71px;
     height: 71px;
     margin-top: 40px;
-}
-
-.advantages__swiperBlock-prev{
-    background: url(../images/pref-btn.svg);
-}
-
-.advantages__swiperBlock-next{
-    background: url(../images/next-btn.svg);
 }
 
 /* SERVICES */
@@ -870,7 +864,8 @@ ul{
 .burgerMenu__btn-hide{
     position: relative;
     display: block;
-    margin-left: 55px;
+    margin-left: 107px;
+    top: 50px;
 }
 
 .burgerMenu__btn-hide>span{
@@ -894,7 +889,7 @@ ul{
 }
 
 #burgerMenu>.container{
-    width: 200px;
+    width: 300px;
 }
 
 .burger-btn,
@@ -904,16 +899,59 @@ ul{
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 120%;
     width: 100%;
     text-align: center;
 }
 
 .burger-link{
-    margin-top: 60px;
+    margin-top: 180px;
 }
 
 .burger-btn{
     margin-top: 30px;
+}
+
+/* ADVANTAGES SWIPER */
+
+.advantages__swiper-button-next_1,
+.advantages__swiper-button-next_2{
+    background: url(../images/next-btn.svg);
+    width: 71px;
+    height: 71px;
+    position: relative;
+    z-index: 15;
+    float: right;  
+    margin-top: -105px;
+}
+
+.advantages__swiper-button-prev_1,
+.advantages__swiper-button-prev_2{
+    background: url(../images/pref-btn.svg);
+    width: 71px;
+    height: 71px;
+    position: relative;
+    z-index: 15;
+    float: left;
+    margin-top: -105px;
+}
+
+.advantages__inner>.swiper{
+    margin: 0;
+}
+
+.advantages__swiperBlock-text{
+    position: relative;
+    margin: 0 110px;
+    margin-top: 40px;
+}
+
+.advantages__inner>.slider{
+    padding: 0;
+}
+
+.--opacity-btn{
+    cursor: default;
+    opacity: 0.4;
 }
