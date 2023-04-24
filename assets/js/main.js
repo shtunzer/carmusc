@@ -73,12 +73,19 @@ document.querySelector('.scrollTo12').addEventListener('click', function(){
 });
 
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
   spaceBetween: 24,
   navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
   },
+  breakpoints:{
+      1430: {
+        slidesPerView: 3
+      },
+      1040: {
+        slidesPerView: 2
+      }
+  }
 });
 
 const advantages__swiper_1 = new Swiper(".advantages__swiperBlock_1", {
