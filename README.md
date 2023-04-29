@@ -1,4 +1,4 @@
 # Car Musc
-  - Designed by d-e-n.ru
+  - Design by d-e-n.ru
   - Adaptive to 350px
   - For Portfolio
